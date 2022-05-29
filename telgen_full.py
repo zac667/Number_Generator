@@ -28,14 +28,14 @@ def login():
         workbook = xlsxwriter.Workbook(filename+'.xlsx')
         worksheet = workbook.add_worksheet()
         def random_with_N_digits(n):
-            range_start = 10**(n-1) #Choose range of your random numbers
+            range_start = 10**(n-1) 
             range_end = (10**n)-1
             return randint(range_start, range_end)
 
         while s <= nb_num:
             
             print(str(country_code)+str(prefix)+str(random_with_N_digits(8)))
-            full = str(country_code)+str(prefix)+str(random_with_N_digits(8))
+            full = str(country_code)+str(prefix)+str(random_with_N_digits(8))#Choose range of your number here
             value = (full, 0, )
             
             
