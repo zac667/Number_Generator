@@ -53,9 +53,9 @@ def login():
 
     return '''<form enctype="multipart/form-data" method = "post">
     <p>Générateur de numéro</p>
-    <p><input enctype="multipart/form-data" placeholder="saisissez 1 chiffes ex: 6 pour un 06 ou 1 pour 01" type="textarea" name="prefix"></p>
-    <p><input enctype="multipart/form-data" placeholder="Quantité (999 999 max)" type="textarea" id="nb_num" name="nb_num"></p>
-    <p><input enctype="multipart/form-data" placeholder="saisissez le nom du fichier" type="textarea" id="filename" name="filename"></p>
+    <p><input enctype="multipart/form-data" placeholder="saisissez 1 chiffre ex: 6 pour un 06 ou 1 pour 01" type="textarea" name="prefix"></p>
+    <p><input enctype="multipart/form-data" placeholder="Quantité" type="textarea" id="nb_num" name="nb_num"></p>
+    <p><input enctype="multipart/form-data" placeholder="saisissez un nom pour le fichier" type="textarea" id="filename" name="filename"></p>
     <p><input enctype="multipart/form-data" type="submit" name="send_data" id="send_data" value="Générer le Fichier"></p>
     </form>'''
 
